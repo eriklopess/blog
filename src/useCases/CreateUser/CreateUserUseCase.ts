@@ -15,6 +15,6 @@ export default class CreateUserUseCase {
 
     const user = new User(data);
 
-    await this.usersRepository.save(user);
+    return this.usersRepository.save(user);
   }
 }
